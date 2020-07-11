@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="868.0" prefWidth="1285.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem id="newMenu" fx:id="newMenu" mnemonicParsing="false" text="New" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem id="openMenu" fx:id="openMenu" mnemonicParsing="false" text="Open" />
+                  <MenuItem fx:id="openRecentMenu" mnemonicParsing="false" text="Open recent" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem id="saveMenu" fx:id="saveMenu" mnemonicParsing="false" text="Save" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="closeMenu" mnemonicParsing="false" text="Close" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Import">
+              <items>
+                <MenuItem fx:id="textImageMenuImport" mnemonicParsing="false" text="Testo Immagini" />
+                  <MenuItem fx:id="textSpellMenuImport" mnemonicParsing="false" text="Testo Incantesimi" />
+                  <MenuItem fx:id="textTalentMenuImport" mnemonicParsing="false" text="Testo Talenti" />
+                  <MenuItem fx:id="textBestiaryMenuImport" mnemonicParsing="false" text="Testo Bestiario" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Export">
+              <items>
+                <MenuItem fx:id="textImageMenuExport" mnemonicParsing="false" text="Testo Immagini" />
+                  <MenuItem fx:id="textSpellMenuExport" mnemonicParsing="false" text="Testo Incantesimi" />
+                  <MenuItem fx:id="textTalentMenuExport" mnemonicParsing="false" text="Testo Talenti" />
+                  <MenuItem fx:id="textBestiaryMenuExport" mnemonicParsing="false" text="Testo Bestiario" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.666" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane fx:id="anchorTop" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox alignment="TOP_CENTER" layoutY="-2.0" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: #282828;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox fx:id="imageTop" alignment="CENTER" style="-fx-background-color: #282828; -fx-border-color: white;">
+                           <children>
+                              <VBox fx:id="vBoxTop" alignment="CENTER" />
+                              <HBox fx:id="rotateButton" alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0" spacing="5.0">
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children></VBox>
+                        <VBox alignment="TOP_CENTER" spacing="10.0" style="-fx-background-color: #282828; -fx-border-color: white;">
+                           <children>
+                              <VBox fx:id="VBoxCenter" alignment="CENTER">
+                                 <children>
+                                    <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="audioBox" alignment="CENTER" spacing="10.0" style="-fx-background-color: #282828; -fx-border-color: white;">
+                                 <children>
+                                    <Label text="Master" textFill="WHITE" />
+                                    <Slider fx:id="audioTot" max="50.0" min="-50.0" showTickMarks="true" />
+                                    <HBox alignment="TOP_CENTER" style="-fx-background-color: #282828;">
+                                       <children>
+                                          <VBox fx:id="audioBoxSong1" alignment="TOP_CENTER" spacing="2.0" style="-fx-background-color: #282828; -fx-border-color: white;">
+                                             <children>
+                                                <Label fx:id="labelSong1" text="Canzone" textFill="WHITE" />
+                                                <Slider fx:id="sliderSong1" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="100.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox fx:id="audioBoxSong2" alignment="TOP_CENTER" spacing="2.0" style="-fx-background-color: #282828; -fx-border-color: white;">
+                                             <children>
+                                                <Label fx:id="labelSong2" text="Canzone" textFill="WHITE" />
+                                                <Slider fx:id="sliderSong2" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="100.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="buttonList" alignment="CENTER" spacing="5.0" style="-fx-background-color: #282828;">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin></HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" spacing="5.0">
+                                 <children>
+                                    <Label text="Glossario" textFill="WHITE" />
+                                    <Button fx:id="spellGlossary" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: grey;" text="Incantesimi" textFill="WHITE" />
+                                    <Button fx:id="talentGlossary" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: grey;" text="Talenti" textFill="WHITE" />
+                                    <Button fx:id="bestiaryGlossary" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: grey;" text="Bestiario" textFill="WHITE" />
+                                    <Button fx:id="playerGlossary" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: grey;" text="Personaggi" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="textTop" alignment="CENTER" spacing="5.0" style="-fx-background-color: #282828; -fx-border-color: white;">
+                           <children>
+                              <TextArea fx:id="text" editable="false">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </TextArea>
+                              <HBox fx:id="botBottonText" alignment="CENTER_RIGHT" spacing="5.0">
+                                 <children>
+                                    <Button fx:id="modifyText" mnemonicParsing="false" style="-fx-background-color: grey;" text="Modifica" textFill="WHITE" />
+                                    <Button fx:id="saveText" mnemonicParsing="false" style="-fx-background-color: grey;" text="Salva" textFill="WHITE" />
+                                    <Button fx:id="deleteText" mnemonicParsing="false" style="-fx-background-color: grey;" text="Elimina" textFill="WHITE" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="anchorBot">
+               <children>
+                  <HBox fx:id="hboxAudio" style="-fx-background-color: #282828;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox fx:id="listBot" style="-fx-background-color: #282828;">
+                           <children>
+                              <ScrollPane fx:id="imageList" cacheHint="QUALITY" nodeOrientation="LEFT_TO_RIGHT" pannable="true" pickOnBounds="false" style="-fx-background-color: grey;" vbarPolicy="NEVER" VBox.vgrow="NEVER">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets></ScrollPane>
+                              <ScrollPane fx:id="playerList" cacheHint="QUALITY" nodeOrientation="LEFT_TO_RIGHT" pannable="true" pickOnBounds="false" style="-fx-background-color: grey;" vbarPolicy="NEVER" />
+                           </children></VBox>
+                        <VBox fx:id="leftBoxButton" style="-fx-background-color: #282828; -fx-border-color: white;" />
+                        <VBox alignment="CENTER" style="-fx-background-color: #282828;">
+                           <children>
+                              <VBox alignment="TOP_CENTER" maxWidth="180.0" minWidth="180.0" prefHeight="200.0" prefWidth="180.0" spacing="5.0" style="-fx-border-color: white;">
+                                 <children>
+                                    <Label text="Mappe" textFill="WHITE" />
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <Button fx:id="imageAdd" maxWidth="80.0" minWidth="80.0" mnemonicParsing="false" prefWidth="80.0" style="-fx-background-color: grey;" text="Aggiungi" textFill="WHITE" />
+                                          <Button fx:id="imageRemove" maxWidth="80.0" minWidth="80.0" mnemonicParsing="false" prefWidth="80.0" style="-fx-background-color: grey;" text="Rimuovi" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxWidth="180.0" minWidth="180.0" prefHeight="200.0" prefWidth="180.0" spacing="5.0" style="-fx-border-color: white;">
+                                 <children>
+                                    <Label text="Personaggi" textFill="WHITE" />
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                       	  <Button fx:id="playerAdd" maxWidth="80.0" minWidth="80.0" mnemonicParsing="false" prefWidth="80.0" style="-fx-background-color: grey;" text="Aggiungi" textFill="WHITE" />
+                                          <Button fx:id="playerRemove" maxWidth="80.0" minWidth="80.0" mnemonicParsing="false" prefWidth="80.0" style="-fx-background-color: grey;" text="Rimuovi" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxWidth="180.0" minWidth="180.0" prefHeight="200.0" prefWidth="180.0" spacing="5.0" style="-fx-border-color: white;">
+                                 <children>
+                                    <Label text="Audio" textFill="WHITE" />
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                       	  <Button fx:id="audioAdd" maxWidth="80.0" minWidth="80.0" mnemonicParsing="false" prefWidth="80.0" style="-fx-background-color: grey;" text="Aggiungi" textFill="WHITE" />	
+                                          <Button fx:id="audioRemove" maxWidth="80.0" minWidth="80.0" mnemonicParsing="false" prefWidth="80.0" style="-fx-background-color: grey;" text="Rimuovi" textFill="WHITE" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children></VBox>
+                        <VBox fx:id="rightBoxButton" style="-fx-background-color: #282828; -fx-border-color: white;" />
+                     </children>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane minHeight="600.0" minWidth="800.0" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThirdController">
+   <left>
+      <VBox fx:id="leftVBox" spacing="10.0" style="-fx-background-color: #282828; -fx-border-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Selezionare un item" textFill="WHITE">
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding></Label>
+            <ListView fx:id="listItem" prefWidth="148.0" style="-fx-background-color: #282828;" />
+            <HBox fx:id="leftHBox" alignment="CENTER" spacing="5.0">
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" text="Aggiungi" />
+                  <Button fx:id="removeButton" mnemonicParsing="false" text="Ellimina" />
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets left="5.0" />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="centerVBox" alignment="TOP_CENTER" spacing="10.0" style="-fx-background-color: #282828; -fx-border-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="centerHBox" alignment="CENTER" style="-fx-border-color: white;">
+               <children>
+                  <ImageView fx:id="backImage" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="image" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="upImage" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <Button fx:id="background" mnemonicParsing="false" text="Background" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
