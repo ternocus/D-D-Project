@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="box" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1040.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SecondaryController">
+   <children>
+      <VBox fx:id="vBoxLeft" alignment="CENTER" prefHeight="1040.0" prefWidth="1090.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="primaryImage" fitHeight="1000.0" fitWidth="1000.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                  <Canvas fx:id="canvas" height="1000.0" nodeOrientation="INHERIT" width="1000.0" />
+               </children>
+            </StackPane>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="vBoxRight" alignment="TOP_CENTER" prefHeight="1040.0" prefWidth="880.0">
+         <children>
+            <HBox fx:id="hBoxRight" alignment="CENTER" prefHeight="300.0" prefWidth="880.0" spacing="50.0">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="logoImage" fitHeight="300.0" fitWidth="600.0" pickOnBounds="true" />
+                        <VBox alignment="TOP_CENTER" spacing="30.0">
+                           <children>
+                              <Label fx:id="typeCampain" text="Label">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="nameCampain" text="D&amp;D 5 - LA GRANDE SCELTA">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <StackPane.margin>
+                              <Insets top="50.0" />
+                           </StackPane.margin>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </HBox>
+            <ImageView fx:id="secondaryImage" fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="80.0" />
+               </VBox.margin></ImageView>
+         </children>
+      </VBox>
+   </children>
+</HBox>

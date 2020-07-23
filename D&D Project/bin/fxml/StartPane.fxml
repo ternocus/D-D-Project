@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="370.0" prefWidth="400.0" spacing="10.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StartController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageLogo" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="20.0" right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="MithGenesis" textAlignment="CENTER" textFill="#6e6d6d">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="buttonContinue" mnemonicParsing="false" onAction="#onContinue" prefHeight="35.0" prefWidth="225.0" style="-fx-background-color: dimgray;" text="CONTINUA" textAlignment="CENTER" textFill="WHITE" />
+      <Button mnemonicParsing="false" onAction="#onNew" prefHeight="35.0" prefWidth="225.0" style="-fx-background-color: dimgray;" text="NUOVO" textFill="WHITE" />
+      <Button mnemonicParsing="false" onAction="#onLoad" prefHeight="35.0" prefWidth="225.0" style="-fx-background-color: dimgray;" text="CARICA" textFill="WHITE" />
+      <Button mnemonicParsing="false" onAction="#onDelete" prefHeight="35.0" prefWidth="225.0" style="-fx-background-color: dimgray;" text="ELIMINA" textFill="WHITE" />
+      <Label text="Alessandro Pioggia" textFill="#434343">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>
