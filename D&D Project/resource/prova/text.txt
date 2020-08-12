@@ -27,3 +27,100 @@ Dio ti prego fa che tutto questo funzioni alla grande
 ###Covo.png
 
 ##END##
+###Porto di King's Bay.png
+Per l'introduzione inseriamo la track: horror.mp3
+Dopodichè passare alla track: pioggia.mp3
+
+2 Taverne: TAVERNA DEL MARINAIO e LA BUONA SORTE
+
+Nome del capitano: CAPITAN LORFOR
+Nome della nave: La bella donna
+
+“Dobbiamo attraccare in una piccola città portuali vicino 
+nell’arcipelago di umalla, chiamata Porto di BlackStone per poi 
+tornare indietro.”
+
+
+Quando partono e ci sarà un po' di narrazione: Dark Vampire Music
+##END##
+###La bella donna.png
+
+##END####END####END#####javafx.scene.image.Image@57f918e4
+Nome del capitano: Capitan Lorfor
+Nome della nave: La bella donna
+
+“Normalmente non avrei avuto problemi ad accettarvi 
+nell’equipaggio, non è la prima volta che qualcuno chiede un 
+passaggio. Ma la rotta che stiamo per affrontare può essere 
+molto pericolosa per via delle incursioni dei pirati di blakstone 
+e soprattutto per via di questo cattivo tempo. Noi siamo obbligati 
+a salpare il prima possibile o perderemo troppi soldi ma vi consiglio,
+se potete, di restare ed aspettare l’indomani magari, quando il 
+tempo sarà migliore. In ogni caso se davvero volete salpare il posto 
+ci sarebbe, vi metteremo nella stiva insieme agli altri pogatori. 
+Però non posso assicurarvi che arriveremo sani e salvi al porto.”
+
+“Dobbiamo attraccare in una piccola città portuali vicino 
+nell’arcipelago di umalla, chiamata Porto di BlackStone per poi 
+tornare indietro.”
+
+Quando partono e ci sarà un po' di narrazione: Dark Vampire Music
+
+##END##
+###naufragio.png
+Skill challenge fallita.
+
+Descrizione del naufragio, cambiare l'immagine solo quando parte.
+##END##
+###deserto.png
+
+##END#####villaggio portuale.png
+Villaggio di: Porto di Blackstone con descrizione
+
+Track: Fiera di paese.mp3
+
+FINE SESSIONE
+##END##
+###javafx.scene.image.Image@15f4061a
+“Bene, vogliamo giocare?” 
+Disse quella creatura, notate che vi 
+guarda, come se stesse cercando qualcosa. Per primo da una 
+velocissima occhiata ad Eklim, senza dargli troppa importanza, 
+poi si concentra su zephir, vieni colpita da una forte folata di vento 
+che ti fa cadere sulle spalle il cappuccio. Notate che il suo sguardo 
+da prima sicuro di se, vedendoti in volto si corruga.
+
+A dangal viene il dubbio che stia mentendo sulla leggenda di 
+UMALLA.
+
+##END##
+###Briria.png
+Durante il viaggio per andare a Umalla dopo alcune ore di viaggio
+arrivano in una zona nella quale ci sono molte isolette, piccole. 
+Ad un certo punto iniziate a credere di aver sbagliato strada… 
+Anzi ne siete certi, vi sembra di star tornando indietro, mentre 
+dovreste sempre andare dritto. Vi sembra che ci sia qualcosa che 
+non va.
+##END##
+###javafx.scene.image.Image@7850f6cd
+Arcimago Saelner.
+
+Lacrima di Mystra: un potente artefatto ai maghi precluso, in 
+quanto messo in una grotta progettata per uccidere ogni mago
+che tentasse di accedervi. Incanala la magia arcana di più maghi
+verso un unico scopo.
+
+Traccia audio: ansia-suspance.mp3
+##END#####javafx.scene.image.Image@24c8b629
+Capitano Lorfor.
+
+##END##
+###javafx.scene.image.Image@5f8d03d6
+Daiana
+##END##
+###javafx.scene.image.Image@3cdf023e
+Demone Melriax
+##END##
+###locanda2.png
+Traccia audio: taverna ambiente.mp3 + Fiera di paese.mp3
+##END##
